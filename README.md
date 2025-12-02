@@ -23,11 +23,13 @@ A comprehensive e-commerce API built with Node.js, Express, TypeScript, and Mong
 ## API Endpoints
 
 ### Authentication
+
 - `POST /api/users/register` - Register a new user
 - `POST /api/users/login` - Login user
 - `GET /api/users/profile` - Get authenticated user's profile
 
 ### Products
+
 - `GET /api/products` - Get all products (supports pagination, filtering, search)
 - `GET /api/products/:id` - Get a specific product
 - `POST /api/products` - Create a new product
@@ -35,6 +37,7 @@ A comprehensive e-commerce API built with Node.js, Express, TypeScript, and Mong
 - `DELETE /api/products` - Delete a product
 
 ### Cart
+
 - `GET /api/cart` - Get user's cart
 - `POST /api/cart/add` - Add product to cart
 - `POST /api/cart/bulk-add` - Add multiple products to cart
@@ -43,6 +46,7 @@ A comprehensive e-commerce API built with Node.js, Express, TypeScript, and Mong
 - `DELETE /api/cart/clear` - Clear entire cart
 
 ### Orders
+
 - `POST /api/orders` - Create order from cart
 - `GET /api/orders` - Get user's orders
 - `GET /api/orders/:id` - Get specific order
@@ -52,6 +56,7 @@ A comprehensive e-commerce API built with Node.js, Express, TypeScript, and Mong
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (v14 or higher)
 - MongoDB instance
 - npm or yarn
@@ -59,28 +64,33 @@ A comprehensive e-commerce API built with Node.js, Express, TypeScript, and Mong
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone <repository-url>
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
 
 3. Create a `.env` file in the root directory with the following variables:
+
    ```
-   DB_URL=mongodb://localhost:27017/productlist
-   JWT_SECRET=your_jwt_secret_here
-   PORT=3000
+   DB_URL
+   JWT_SECRET
+   PORT
    ```
 
 4. Build the project:
+
    ```bash
    npm run build
    ```
 
 5. Start the development server:
+
    ```bash
    npm run dev
    ```
@@ -128,6 +138,7 @@ Authorization: Bearer <your-jwt-token>
 ## Error Handling
 
 The API provides consistent error responses with:
+
 - Appropriate HTTP status codes
 - Descriptive error messages
 - Consistent JSON response format
